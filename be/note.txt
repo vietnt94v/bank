@@ -1,0 +1,106 @@
+tables should have:
+users
+user_credentials
+user_profiles
+user_sessions
+security_events
+
+users:
+- id
+- public_id
+- email
+- email_normalized
+- email_verified_at
+- phone
+- phone_normalized
+- phone_verified_at
+- status
+- kyc_status
+- risk_level
+- last_login_at
+- locked_until
+- created_at
+- updated_at
+- deleted_at
+
+user_credentials:
+- user_id
+- password_hash
+- password_algo
+- password_changed_at
+- password_reset_required
+- failed_login_count
+- last_failed_login_at
+- created_at
+- updated_at
+
+user_profiles:
+- user_id
+- first_name
+- last_name
+- display_name
+- date_of_birth
+- nationality
+- identity_type
+- identity_number_encrypted
+- address_encrypted
+- kyc_verified_at
+- created_at
+- updated_at
+
+user_sessions:
+- id
+- user_id
+- refresh_token_hash
+- device_id
+- user_agent
+- ip_address
+- status
+- created_at
+- last_used_at
+- expires_at
+- revoked_at
+
+security_events:
+- id
+- user_id
+- event_type
+- ip_address
+- user_agent
+- metadata
+- created_at
+
+1 ./auth dùng các bảng:
+users
+user_credentials
+user_mfa_factors
+user_sessions
+security_events
+
+Ví dụ:
+POST /auth/register
+POST /auth/login
+POST /auth/verify-mfa
+POST /auth/refresh-token
+POST /auth/logout
+POST /auth/forgot-password
+POST /auth/reset-password
+POST /auth/change-password
+GET  /auth/me
+GET  /auth/sessions
+DELETE /auth/sessions/{id}
+
+
+2. /users dùng các bảng:
+users
+user_profiles
+user_roles
+security_events
+
+Ví dụ:
+GET    /users/me
+PATCH  /users/me
+GET    /users/{id}          -- admin/staff only hoặc owner check
+PATCH  /users/{id}/status   -- admin/compliance only
+GET    /users/{id}/profile
+PATCH  /users/{id}/profile
