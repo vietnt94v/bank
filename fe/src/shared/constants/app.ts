@@ -9,6 +9,8 @@ export const DEFAULT_COUNT_STEP = 1;
 export const ROUTES = {
   home: '/',
   profile: '/profile',
+  transfers: '/transfers',
+  cards: '/cards',
   login: '/login',
   signup: '/signup',
 } as const;
@@ -16,6 +18,6 @@ export const ROUTES = {
 export const NAV_ITEMS = [
   { label: 'Home', path: ROUTES.home },
   { label: 'Profile', path: ROUTES.profile },
-  { label: 'Login', path: ROUTES.login },
-  { label: 'Signup', path: ROUTES.signup },
+  { label: 'Transfers', path: ROUTES.transfers },
+  { label: 'Cards', path: ROUTES.cards },
 ];

@@ -1,7 +1,7 @@
 import type { SelectHTMLAttributes } from 'react';
 import { useId } from 'react';
 
-import type { SelectOption } from '@/types';
+import type { SelectOption } from '@/shared/types';
 
 type SelectProps = SelectHTMLAttributes<HTMLSelectElement> & {
   label?: string;

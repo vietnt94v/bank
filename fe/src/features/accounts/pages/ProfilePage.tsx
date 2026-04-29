@@ -1,5 +1,5 @@
-import { PageHeader } from '@/components/shared/PageHeader';
-import { Button, Input, Select } from '@/components/ui';
+import { PageHeader } from '@/shared/components/common/PageHeader';
+import { Button, Input, Select } from '@/shared/components/ui';
 
 const accountOptions = [
   { label: 'Personal account', value: 'personal' },

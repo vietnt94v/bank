@@ -1,5 +1,5 @@
-import { PageHeader } from '@/components/shared/PageHeader';
-import { Button, Input } from '@/components/ui';
+import { PageHeader } from '@/shared/components/common/PageHeader';
+import { Button, Input } from '@/shared/components/ui';
 
 export function LoginPage() {
   return (

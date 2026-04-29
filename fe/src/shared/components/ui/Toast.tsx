@@ -1,4 +1,4 @@
-import type { ToastTone } from '@/types';
+import type { ToastTone } from '@/shared/types';
 
 type ToastProps = {
   title: string;

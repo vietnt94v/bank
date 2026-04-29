@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-import { API_URL, REQUEST_TIMEOUT_MS } from '@/const/app';
+import { API_URL, REQUEST_TIMEOUT_MS } from '@/shared/constants/app';
 
 export const apiClient = axios.create({
   baseURL: API_URL,

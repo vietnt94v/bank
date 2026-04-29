@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 
-import { DEFAULT_COUNT_STEP } from '@/const/app';
+import { DEFAULT_COUNT_STEP } from '@/shared/constants/app';
 
 type CounterState = {
   count: number;

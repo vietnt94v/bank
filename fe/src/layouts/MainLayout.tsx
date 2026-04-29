@@ -1,8 +1,8 @@
 import { NavLink, Outlet } from 'react-router-dom';
 
-import { APP_NAME, NAV_ITEMS } from '@/const/app';
+import { APP_NAME, NAV_ITEMS } from '@/shared/constants/app';
 
-export function DefaultLayout() {
+export function MainLayout() {
   return (
     <div className="min-h-screen">
       <header className="sticky top-0 z-30 border-b border-white/70 bg-slate-50/85 backdrop-blur">

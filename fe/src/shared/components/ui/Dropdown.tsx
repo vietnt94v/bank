@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-import type { DropdownItem } from '@/types';
+import type { DropdownItem } from '@/shared/types';
 
 type DropdownProps = {
   label: string;

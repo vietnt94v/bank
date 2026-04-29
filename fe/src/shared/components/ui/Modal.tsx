@@ -1,8 +1,8 @@
 import type { ReactNode } from 'react';
 import { useEffect } from 'react';
 
-import { Button } from '@/components/ui/Button';
-import { Portal } from '@/components/ui/Portal';
+import { Button } from '@/shared/components/ui/Button';
+import { Portal } from '@/shared/components/ui/Portal';
 
 type ModalProps = {
   open: boolean;

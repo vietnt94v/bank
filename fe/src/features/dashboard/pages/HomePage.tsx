@@ -1,11 +1,11 @@
 import { useMemo, useState } from 'react';
 
-import { apiClient } from '@/api';
-import { PageHeader } from '@/components/shared/PageHeader';
-import { Button, Dropdown, Input, Modal, Select, Toast } from '@/components/ui';
-import { API_URL } from '@/const/app';
-import { useCounterStore } from '@/store/useCounterStore';
-import type { ToastTone } from '@/types';
+import { useCounterStore } from '@/app/store/useCounterStore';
+import { apiClient } from '@/shared/api';
+import { PageHeader } from '@/shared/components/common/PageHeader';
+import { Button, Dropdown, Input, Modal, Select, Toast } from '@/shared/components/ui';
+import { API_URL } from '@/shared/constants/app';
+import type { ToastTone } from '@/shared/types';
 
 const selectOptions = [
   { label: 'Choose a product mood', value: '' },
